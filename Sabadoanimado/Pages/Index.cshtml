@@ -13,14 +13,14 @@
         <tr>
             <th>Nome</th>
             <th>Idade</th>
-            <th>Email</th>
+            <th>Gmail</th>
         </tr>
-        @foreach (var student in Model.Students)
+        @foreach (var Paciente in Model.Students)
         {
             <tr>
-                <td>@student.StudentName</td>
-                <td>@student.Age</td>
-                <td>@student.Email</td>
+                <td>@Paciente.nome</td>
+                <td>@Paciente.idade</td>
+                <td>@Paciente.gmail</td>
             </tr>
         }
     </table>

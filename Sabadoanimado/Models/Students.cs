@@ -4,8 +4,8 @@
     {
         public int Id { get; set; }
 
-        public string StudentName { get; set; }
-        public int Age { get; set; }
-        public string Email { get; set; }
+        public string nome { get; set; }
+        public int idade { get; set; }
+        public string gmail { get; set; }
     }
 }

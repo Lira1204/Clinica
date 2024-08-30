@@ -1,18 +1,97 @@
-html {
-  font-size: 14px;
-}
+/* site.css */
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
+/* Estilos Gerais */
 body {
-  margin-bottom: 60px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Cor de fundo clara */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Cabeçalho e Navegação */
+header {
+    background-color: #ffffff; /* Cor de fundo do cabeçalho */
+    border-bottom: 1px solid #e0e0e0; /* Linha de separação sutil */
+}
+
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 1rem;
+}
+
+.nav-link {
+    color: #007bff; /* Cor padrão dos links */
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+    .nav-link:hover {
+        color: #0056b3; /* Cor dos links ao passar o mouse */
+    }
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;base64,...'); /* Ícone de alternância, substitua se necessário */
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 20px;
+    background-color: #ffffff; /* Cor de fundo do conteúdo principal */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Rodapé */
+footer {
+    background-color: #ffffff; /* Cor de fundo do rodapé */
+    border-top: 1px solid #e0e0e0; /* Linha de separação sutil */
+    padding: 10px 0;
+    text-align: center;
+    color: #6c757d; /* Cor do texto do rodapé */
+}
+
+    footer a {
+        color: #007bff; /* Cor dos links no rodapé */
+        text-decoration: none;
+    }
+
+        footer a:hover {
+            color: #0056b3; /* Cor dos links ao passar o mouse */
+        }
+
+/* Responsividade */
+@media (max-width: 576px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+        .navbar-nav .nav-item {
+            margin-right: 0;
+            margin-bottom: 0.5rem;
+        }
+
+    .navbar-toggler {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
 }
